@@ -8,7 +8,7 @@
     width: 100%;
     font-family: 'Alegreya Sans', sans-serif;
     height: 100vh;
-    background-image: url(bg2.jpg);
+    background-image: url(/Public/bg2.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -45,12 +45,14 @@ nav{
   
 
 .logo{
+    cursor: pointer;
     border-radius: 50%;
     border-style: solid;
     border-color: gold;
     padding: 10px;
     width: 70px;
 }
+
 
 nav ul li{
     display: inline-flex;
@@ -85,7 +87,7 @@ a:hover{
 
 }
 
-.text .p1{
+.text .p1g{
     font-size: 30px;
 }
 
@@ -116,7 +118,7 @@ a:hover{
 .h3{
     color: azure;
 }
-.p1{
+.p1g{
     color: azure;
 }
 
@@ -308,4 +310,71 @@ h1 a {
 h1 a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.privacy{
+    width: 100%;
+    background-color: rgb(59, 0, 59);
+    
+}
+
+.privacyContainer{
+    width: 80%;
+    margin-top: 20px;
+    /* margin: auto; */
+    margin-left: 10%;
+    color: white;
+}
+
+.termsContainer{
+    background-color: rgb(48, 20, 20);
+    color: rgb(132, 158, 158);
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 10%;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+.error{
+    display: none;
+}
+
+
+@media (max-width: 700px){
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .text{
+        align-items: left;
+    }
+
+    .login-btn{
+        margin: auto;
+    }
+
+    .text .h3{
+        font-size: 20px;
+        align-items: center;
+
+    }
+
+    .c1 .p1g{
+        font: 16px;
+        color: azure;
+        align-items: center;
+        width: 200%;
+        justify-content: center;
+    }
+
+    .error{
+        display: block;
+        color: cyan;
+    }
+
+
 }
